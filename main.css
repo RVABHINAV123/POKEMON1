@@ -1,0 +1,34 @@
+body{
+        background-image: url("pictures/background.png");
+        background-size: cover;
+  background-repeat: no-repeat;
+ 
+    }
+    p {
+        font-size: 20px;
+        font-family:Arial;
+        font-weight:bold;
+        font-style: italic;
+        color:red;
+    }
+ .Bulbasaur,
+.Charmander,
+.Squirtle {
+    width: 120px;
+    margin: 20px;
+}
+select {
+    color: blue;
+    font-size: 18px;
+    text-align: center;
+    margin: 100px;
+}
+
+option {
+    color: white;
+    background-color: black;
+}
+.Submit{
+    
+        text-align: center;
+}

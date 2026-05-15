@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANTO</title>
+
+<style>
+body{
+    background-image: url("pictures/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p{
+    color:red;
+    font-size:20px;
+    font-style:italic;
+    font-weight:bold;
+}
+
+select{
+    font-size:18px;
+}
+
+#pokemonImage{
+    width:200px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<p>What is your favorite Kanto starter Pokemon?</p>
+
+<select id="pokemonSelect">
+    <option value="bulbasaur">Bulbasaur</option>
+    <option value="charmander">Charmander</option>
+    <option value="squirtle">Squirtle</option>
+</select>
+
+<br>
+
+<img id="pokemonImage" src="pictures/bulbasaur.jpg">
+
+<script>
+const select = document.getElementById("pokemonSelect");
+const image = document.getElementById("pokemonImage");
+
+select.addEventListener("change", function () {
+
+    if(select.value === "bulbasaur"){
+        image.src = "pictures/bulbasaur.jpg";
+    }
+
+    else if(select.value === "charmander"){
+        image.src = "pictures/charmander.png";
+    }
+
+    else if(select.value === "squirtle"){
+        image.src = "pictures/squirtle.jpg";
+    }
+
+});
+</script>
+
+</body>
+</html>
